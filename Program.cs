@@ -25,8 +25,8 @@ Console.Clear();
 double valPagMinimo = valorFatura * jurosPagMinimo2; //Valor do pagamento mínimo
 double valNaoPago = valorFatura - valPagMinimo; //Val não pago:
 double jurosPagar = jurosMensais2 * valNaoPago; //Juros
-const double iofMensal = 0.0038 * valNaoPago; //IOF Mensal
-const double iofDiario = 0.000082 * 30 * valNaoPago; //IOF Diário
+double iofMensal = 0.0038 * valNaoPago; //IOF Mensal
+double iofDiario = 0.000082 * 30 * valNaoPago; //IOF Diário
 double valAPagar = valNaoPago + 
     jurosPagar + 
     iofMensal + 
